@@ -53,6 +53,15 @@ ul{
     flex: 1;
     margin-left: 20px;
 }
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right: 30px;
+    font-size: 2rem;
+    z-index: 100;
+    display: none;
+}
 hr{
     margin: 10px 0;
 }
@@ -213,7 +222,42 @@ hr{
 
 
 @media (max-width: 700px){
-    body{
-        background: red;
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: .5;
+    }
+
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:#2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        padding: 50px;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+    .news-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .menu-right{
+        margin-right: 40px;
+        font-size: 2rem;
+    }
+    .nav-main ul.nav-menu.show{
+        transition: transform .5s ease-in-out;
+        transform: translateX(-20px);
+    }
+}
+
+@media (max-width:500px){
+    .news-cards{
+        grid-template-columns: 1fr;
     }
 }

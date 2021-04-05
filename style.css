@@ -76,6 +76,7 @@ hr{
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 20px;
+    z-index: 1;
 }
 .showcase p{
     text-align: center;
@@ -241,6 +242,7 @@ hr{
         padding: 50px;
         transform: translateX(-400px);
         transition: transform .5s ease-in-out;
+        z-index: 120;
     }
     .news-cards{
         display: grid;

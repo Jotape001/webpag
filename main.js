@@ -4,8 +4,7 @@ document.querySelector('.menu-btn').addEventListener(
     }
 );
 ScrollReveal({ reset: true, rotate: {y: 100} });
-ScrollReveal().reveal('.nav-main');
-ScrollReveal().reveal('.showcase');
+
 ScrollReveal().reveal('.news-1', { delay: 100 });
 ScrollReveal().reveal('.news-2', { delay: 200 });
 ScrollReveal().reveal('.news-3', { delay: 250 });
